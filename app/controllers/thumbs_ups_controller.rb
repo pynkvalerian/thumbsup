@@ -1,6 +1,7 @@
 class ThumbsUpsController < ApplicationController
   def new
     @thumbs_up = ThumbsUp.new
+    @users = User.where.not(id: current_user.id).pluck(:username, :id)
   end
 
   def create
