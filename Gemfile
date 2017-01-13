@@ -38,6 +38,7 @@ gem 'figaro'
 gem 'omniauth'
 gem 'omniauth-slack'
 gem 'slack-ruby-client'
+gem 'sidekiq'
 
 gem 'slim'
 gem 'bootstrap-sass', '~> 3.3.6'
