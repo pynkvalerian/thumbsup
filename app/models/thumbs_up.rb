@@ -1,4 +1,4 @@
 class ThumbsUp < ApplicationRecord
-  belongs_to :sender_id
-  belongs_to :receiver_id
+  belongs_to :sender, class_name: "User"
+  belongs_to :receiver, class_name: "User"
 end

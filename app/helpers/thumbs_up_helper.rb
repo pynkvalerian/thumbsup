@@ -1,0 +1,2 @@
+module ThumbsUpHelper
+end
