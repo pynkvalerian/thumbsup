@@ -1,0 +1,10 @@
+.jumbotron.text-center
+  h1 Thumbs Up 
+  p In Next Academy, we like to show our appreciation towards our colleagues.
+
+  - if current_user
+    p = "Welcome back, #{current_user.username} !"
+    = link_to "Send a thumbs up", new_thumbs_up_path, class: "btn btn-primary btn-lg"
+
+  - else
+    = link_to "Sign in via Slack", sign_in_path, class: "btn btn-primary btn-lg"
