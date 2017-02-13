@@ -4,7 +4,7 @@
 
   - if current_user
     p = "Welcome back, #{current_user.username} !"
-    = link_to "Send a thumbs up", new_thumbs_up_path, class: "btn btn-primary btn-lg"
+    = link_to "Send a thumbs up", new_thumbs_up_path, class: "btn btn-default btn-lg"
 
   - else
     = link_to "/auth/slack", class: 'btn btn-default btn-lg btn-slack' do
