@@ -18,4 +18,7 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body.container
+    - if current_user
+      
+      = link_to "Sign Out.", sign_out_path, method: 'delete', class: 'pull-right sign-out'
     = yield
