@@ -4,8 +4,6 @@
 @import "bootswatch/paper/variables";
 // Then bootstrap itself
 @import "bootstrap";
-// Bootstrap body padding for fixed navbar
-body { padding-top: 60px; }
 // And finally bootswatch style itself
 @import "bootswatch/paper/bootswatch";
 
@@ -23,7 +21,7 @@ body {
 }
 
 .container {
-  background-color: #f43835;
+  background-color: #f03c2e;
   color: white;
 
   a,
@@ -33,6 +31,11 @@ body {
     // color: white;
     font-weight: bold;
   }
+}
+
+.form-control {
+  color: white;
+  font-size: 24px !important;
 }
 
 h1 {
@@ -55,6 +58,7 @@ h1 {
 }
 
 .slack-logo {
-  margin-right: 20px;
-  width: 25px;
+  margin-top: -2px;
+  margin-right: 10px;
+  width: 20px;
 }
