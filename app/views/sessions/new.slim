@@ -1,1 +1,3 @@
-= link_to "Sign In via Slack", "/auth/slack"
+= link_to "/auth/slack", class: 'btn btn-default btn-lg btn-slack' do
+  = image_tag 'slack.svg', class: 'slack-logo'
+  | Sign In via Slack

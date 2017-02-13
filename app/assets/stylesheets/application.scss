@@ -8,3 +8,53 @@
 body { padding-top: 60px; }
 // And finally bootswatch style itself
 @import "bootswatch/paper/bootswatch";
+
+//BASE STYLES
+
+body {
+  background: url(/assets/bg.jpg) no-repeat center bottom;
+  background-size: 50vh;
+  color: white;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+
+.container {
+  background-color: #f43835;
+  color: white;
+
+  a,
+  a:focus,
+  a:hover,
+  a:visited {
+    // color: white;
+    font-weight: bold;
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+// CUSTOM STYLES
+
+.btn-slack {
+
+  a,
+  a:focus,
+  a:hover,
+  a:visited {
+    color: #3c434d;
+    font-weight: bold;
+  }
+}
+
+.slack-logo {
+  margin-right: 20px;
+  width: 25px;
+}
