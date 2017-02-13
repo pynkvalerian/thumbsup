@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"
+    link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"
+    link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"
+    link href="/manifest.json" rel="manifest"
+    link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon"
+    meta content="#ffffff" name="theme-color"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    title Thumbsup
+
+    = csrf_meta_tags
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body.container
+    = yield

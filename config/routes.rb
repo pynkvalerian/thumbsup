@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   resources :thumbs_ups, only: [:new, :create]
 
+  root 'pages#index'
+
 end
