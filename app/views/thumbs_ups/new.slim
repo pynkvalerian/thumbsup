@@ -6,7 +6,7 @@
     = simple_form_for @thumbs_up do |f|
       .form-group
         = f.label :recipient
-        = f.select :receiver_id, @users, {}, class: "form-control js-example-basic-single"
+        = f.select :receiver_id, @users, { include_blank: true }, class: "form-control js-example-basic-single"
       = f.input :message, class: "form-control"
       = f.submit "Send it now!" , class: "btn btn-default btn-lg"
 
